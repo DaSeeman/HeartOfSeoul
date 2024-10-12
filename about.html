@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - About Us</h1>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="main-sections">
+            <!--  "Who We Are" and "Our Mission" -->
+            <section class="box who-we-are">
+                <h2>Who We Are</h2>
+                <p style="margin-top: 10px;">We are dedicated to providing information about Korean culture, food, and history. 
+                    Our mission is to educate and inspire people around the world about the richness and 
+                    diversity of Korean heritage.</p>
+            </section>
+
+            <section class="box our-mission">
+                <h2>Our Mission</h2>
+                <p style="margin-top: 10px;">We aim to connect people with the culture, history, and future of Korea by offering deep 
+                    insights into Korean life, from language to cuisine, all while fostering global 
+                    understanding and respect.</p>
+            </section>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section class="box contact-us">
+            <h2>Contact Us</h2>
+            <!-- Clicking the email link opens the contact form popup -->
+            <p style="margin-top: 20px;">If you have any questions, feel free to <a href="#" onclick="openForm()">email us</a>. We'd love to hear from you!</p>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="box subscribe-newsletter">
+            <h2>Want more?</h2>
+            <p style="margin-top: 10px;">Subscribe to our newsletter for updates!</p>
+            <!-- Link to newsletter page -->
+            <a href="news.html">Subscribe to our newsletter</a>
+        </section>
+
+        <!-- Popup Form for Contact -->
+        <div id="contactForm" class="popup-form">
+            <div class="form-content">
+                <h3>Contact Us</h3>
+                <form id="messageForm" onsubmit="showConfirmation(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Confirmation Popup after Form Submission -->
+        <div id="confirmationPopup" class="popup-confirmation">
+            <div class="confirmation-content">
+                <h3>Thank You!</h3>
+                <p>Thanks for messaging us! We will get back to you at our earliest convenience.</p>
+                <button onclick="closeConfirmation()">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Handling Popup Forms and Messages -->
+    <script>
+        // Open the contact form popup
+        function openForm() {
+            document.getElementById('contactForm').style.display = 'block';
+        }
+
+        // Close the contact form popup
+        function closeForm() {
+            document.getElementById('contactForm').style.display = 'none';
+        }
+
+        // Show confirmation message after form submission
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent page reload
+            document.getElementById('contactForm').style.display = 'none'; // Close the form
+            document.getElementById('confirmationPopup').style.display = 'block'; // Show confirmation
+        }
+
+        // Close the confirmation popup
+        function closeConfirmation() {
+            document.getElementById('confirmationPopup').style.display = 'none';
+        }
+
+        // Go back to the homepage
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>

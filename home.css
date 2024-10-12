@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  position: relative;
+  /* Set up a placeholder background with transparency */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('flag.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* 70% transparency */
+  z-index: -1; /* Ensures the image stays behind the content */
+}
+
+header {
+  background-color: #3A7CA5; /* Modern blue */ 
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  border: 3px solid #333;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+/* Logo Styling */
+.logo {
+  position: absolute;
+  left: 20px; /* Align the logo to the left */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 2px solid #000000; /* Black border around the logo */
+}
+
+h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav {
+  background-color: #444444; 
+  padding: 15px;
+  border: 3px solid #333;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li:hover > a {
+  background-color: #3CB8A9; /* Change color on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #50E3C2;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border: 2px solid #333;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.summary {
+  background-color: #f8a9a9;
+  width: 70%; 
+  padding: 20px;
+  border: 3px solid #333;
+}
+
+.image-box {
+  background-color: #E94E77; /* Pink background */
+  color: white; 
+  width: 30%; 
+  padding: 20px;
+  border: 3px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-placeholder img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto; 
+}
+
+
+.fun-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.fun-fact {
+  background-color: #0f47d5;
+  padding: 20px;
+  border: 3px solid #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.fun-fact strong {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px; /* Reduced space between title and text */
+}
+
+.fun-fact p {
+  color: white;
+  line-height: 1.5;
+  margin-top: 0; /* Remove margin between title and text */
+}
+
+.fun-fact button {
+  background-color: #ff0707;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: auto; /* Places the button at the bottom */
+}
+
+footer {
+  background-color: #2C3E50; 
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #000000; /* Black border */
+}

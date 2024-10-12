@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Sign Up for Our Newsletter</h1>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="newsletter-signup">
+            <h2>Stay Updated with Our Latest News!</h2>
+            <p>Enter your email below to subscribe to our newsletter:</p>
+            
+            <!-- Newsletter Sign-up Form -->
+            <form id="signupForm" onsubmit="showPopup(event)">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Popup for Confirmation -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>Thank you for signing up!</h3>
+                <p id="confirmationEmail"></p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Popup and Logo Click -->
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+
+        // Show the confirmation popup when the form is submitted
+        // Note: This JavaScript code was created using ChatGPT for the popup functionality
+        function showPopup(event) {
+            event.preventDefault();  // Prevent the form from submitting
+            const email = document.getElementById('email').value;  // Get the email input
+            document.getElementById('confirmationEmail').innerText = `You signed up with: ${email}`;  // Display the email in the popup
+            document.getElementById('popup').style.display = 'block';  // Show the popup
+        }
+
+        // Close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';  // Hide the popup
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('flag.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* 70% transparency */
+    z-index: -1; /* Ensures the image stays behind the content */
+}
+
+/* Header */
+header {
+    background-color: #3A7CA5; /* Modern blue */ 
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #333;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 2px solid #000000;
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #444444; 
+    padding: 15px;
+    border: 3px solid #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #3CB8A9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #50E3C2;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border: 2px solid #333;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*Korean Food Box */
+.main-summary {
+    width: 40%;
+    padding: 20px;
+    background-color: #f85353; 
+    border: 3px solid #333;
+    box-sizing: border-box;
+}
+
+.korean-food-image {
+    width: 100%; /* Adjusts to fill box */
+    height: auto; 
+    margin-top: 20px;
+    display: block;
+}
+
+/*Recipe Boxes */
+.synopsis-container {
+    width: 55%;
+}
+
+/* Recipe Section */
+.recipe-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border: 3px solid #4400ff; /* Recipe border in a bold color */
+    padding: 15px;
+    background-color: #fff;
+    align-items: center;
+    height: 180px; /* Thin rectangle for the recipe boxes */
+}
+
+/* Image Section*/
+.image-section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border: 2px dashed #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits within square */
+}
+
+/* Food Synopsis Section */
+.food-synopsis {
+    width: 70%; 
+    padding-left: 15px;
+}
+
+.food-synopsis strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.download-button, .view-recipe-button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; 
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #000000;
+}

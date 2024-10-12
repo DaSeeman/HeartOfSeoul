@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Alphabet Page</title>
+    <link rel="stylesheet" href="alphabet.css">
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="header-content">
+            <!-- Logo with PNG Image -->
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Korean Alphabet</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li class="dropdown">
+            <a href="culture.html">Culture</a>
+            <ul class="dropdown-content">
+                <li><a href="kpop.html">Kpop</a></li>
+            </ul>
+        </li>
+        <li><a href="alphabet.html">Alphabet</a></li>
+        <li><a href="history.html">History</a></li>
+        <li class="dropdown">
+            <a href="about.html">About</a>
+            <ul class="dropdown-content">
+                <li><a href="news.html">Newsletter</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Expanded Main Body Section for Korean Alphabet -->
+        <div class="main-summary">
+            <h2>Korean Alphabet</h2>
+            <p>The Korean alphabet, known as Hangul, was invented in the 15th century during the reign of King Sejong the Great. Before Hangul’s creation, 
+                Koreans used Classical Chinese characters (Hanja), which were complex and difficult for common people to learn. To promote literacy, King Sejong 
+                commissioned scholars to develop a simpler and more accessible writing system. In 1443, Hangul was created, consisting of 14 consonants and 10 vowels. 
+                This alphabet was designed to reflect the sounds of spoken Korean, enhancing communication and education among all social classes.</p>
+
+            <p style="margin-top: 20px;">Hangul is a phonetic alphabet, similar to the English alphabet, but it uses a combination of 24 letters (14 consonants and 10 vowels), 
+                arranged in syllabic blocks rather than in a linear sequence. Each block represents a syllable, making the writing system visually distinct. Hangul's 
+                logical structure and phonetic consistency make it easier to learn compared to English, which has irregular spelling rules.</p>
+        </div>
+
+        <!-- Korean Alphabet Table with Expand/Collapse Feature -->
+        <div class="korean-alphabet-table">
+            <h3>Korean Alphabet</h3>
+            <table id="alphabetTable">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Letter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ㄱ</td><td>g/k</td></tr>
+                    <tr><td>ㄴ</td><td>n</td></tr>
+                    <tr><td>ㄷ</td><td>d/t</td></tr>
+                    <tr><td>ㅁ</td><td>m</td></tr>
+                    <tr><td>ㅂ</td><td>b/p</td></tr>
+                    <tr><td>ㅅ</td><td>s</td></tr>
+                    <tr><td>ㅇ</td><td>ng</td></tr>
+                    <tr><td>ㅈ</td><td>j</td></tr>
+                    <tr><td>ㅊ</td><td>ch</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Expand and Condense Buttons -->
+            <button id="expandButton" onclick="expandTable()">Show Full Alphabet</button>
+            <button id="condenseButton" onclick="condenseTable()" style="display:none;">Condense Alphabet</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Logo Click, Table Expand and Condense -->
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+
+        function expandTable() { 
+            //ChatGPT used ot figure out how to expand and collaspe table
+            const table = document.getElementById('alphabetTable');
+            const expandButton = document.getElementById('expandButton');
+            const condenseButton = document.getElementById('condenseButton');
+
+            table.innerHTML += `
+                <tr><td>ㅋ</td><td>k</td></tr>
+                <tr><td>ㅌ</td><td>t</td></tr>
+                <tr><td>ㅍ</td><td>p</td></tr>
+                <tr><td>ㅎ</td><td>h</td></tr>
+                <tr><td>ㅏ</td><td>a</td></tr>
+                <tr><td>ㅑ</td><td>ya</td></tr>
+                <tr><td>ㅓ</td><td>eo</td></tr>
+                <tr><td>ㅕ</td><td>yeo</td></tr>
+                <tr><td>ㅗ</td><td>o</td></tr>
+                <tr><td>ㅛ</td><td>yo</td></tr>
+                <tr><td>ㅜ</td><td>u</td></tr>
+                <tr><td>ㅠ</td><td>yu</td></tr>
+            `;
+
+            expandButton.style.display = 'none'; // Hide the expand button
+            condenseButton.style.display = 'block'; // Show the condense button
+        }
+
+        function condenseTable() {
+            const table = document.getElementById('alphabetTable');
+            const expandButton = document.getElementById('expandButton');
+            const condenseButton = document.getElementById('condenseButton');
+
+            // Reset the table to its initial content
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Letter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ㄱ</td><td>g/k</td></tr>
+                    <tr><td>ㄴ</td><td>n</td></tr>
+                    <tr><td>ㄷ</td><td>d/t</td></tr>
+                    <tr><td>ㅁ</td><td>m</td></tr>
+                    <tr><td>ㅂ</td><td>b/p</td></tr>
+                    <tr><td>ㅅ</td><td>s</td></tr>
+                    <tr><td>ㅇ</td><td>ng</td></tr>
+                    <tr><td>ㅈ</td><td>j</td></tr>
+                    <tr><td>ㅊ</td><td>ch</td></tr>
+                </tbody>
+            `;
+
+            expandButton.style.display = 'block'; // Show the expand button
+            condenseButton.style.display = 'none'; // Hide the condense button
+        }
+    </script>
+</body>
+</html>

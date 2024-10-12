@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo" >
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Home</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <section class="summary">
+                <h2>Korea At A Glance</h2>
+                <p style="margin-top: 10px;">From K-pop to Korean cuisine, Korean culture has captivated audiences worldwide with its unique fusion of tradition and modernity. 
+                    This vibrant culture, deeply rooted in history and diverse heritage, provides a fascinating look into the values, customs, and artistic expressions 
+                    that have evolved over centuries. In this article, we will explore the foundations of Korean culture, delving into its historical context and traditional 
+                    practices to better understand the core elements that shape Korea's modern identity.</p>
+
+                <p style="margin-top: 20px;">Korean culture is a rich tapestry, intricately woven with ancient customs, historical landmarks, and a distinct heritage. 
+                    From the craftsmanship of traditional arts to the influence of Confucian philosophy, 
+                    every aspect reflects a deep reverence for the past, while embracing contemporary innovations. 
+                    Whether it's the graceful beauty of Hanbok, the bold flavors of Kimchi, or the global rhythms of K-pop, the depth and diversity of Korea's 
+                    traditions and history offer a never-ending journey of discovery and admiration.</p>
+            </section>
+
+            <section class="image-box">
+                <div class="image-placeholder">
+                    <!-- Sizing for the image -->
+                    <img src="seoul.jpg" alt="Korea Image" style="max-width: 100%; height: auto;" />
+                </div>
+            </section>
+        </div>
+
+        <!-- Fun Facts Section -->
+        <section class="fun-facts">
+            <div class="fun-fact">
+                <strong>Fun Fact 1</strong>
+                <p>One of Modern Korea's biggest contributions has been its music, from Blackpink and BTS to 
+                    the more well-known PSY with "Gangnam Style". K-pop has become a big focal point of Korean modern culture.</p>
+                <!-- Button linked to kpop.html using JavaScript -->
+                <button onclick="window.location.href='kpop.html'">Check out K-Pop</button>
+            </div>
+
+            <div class="fun-fact">
+                <strong>Fun Fact 2</strong>
+                <p>Kimchi, a fermented vegetable dish, has been a staple in Korean cuisine for over 2,000 
+                    years, with hundreds of varieties enjoyed daily.</p>
+                <!-- Button linked to food.html using JavaScript -->
+                <button onclick="window.location.href='food.html'">Check out Korean Food</button>
+            </div>
+
+            <div class="fun-fact">
+                <strong>Fun Fact 3</strong>
+                <p>
+                    A fun fact about the Korean alphabet, Hangul, is that it was specifically designed to be 
+                    easy to learn! Created by King Sejong the Great in 1443, Hangul was meant to be so 
+                    intuitive that even common people with no formal education could learn to read and write.</p>
+                <!-- Button linked to demographics.html using JavaScript -->
+                <button onclick="window.location.href='alphabet.html'">Check out the Korean Alphabet</button>
+            </div>
+
+            <div class="fun-fact">
+                <strong>Fun Fact 4</strong>
+                <p>The ancient kingdom of Goguryeo, one of Korea's Three Kingdoms, 
+                was known for its powerful military and vast territorial expansions,
+                influencing much of East Asia from 37 BCE to 668 CE.</p>
+                <!-- Button linked to history.html using JavaScript -->
+                <button onclick="window.location.href='history.html'">Check out Korean History</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+</body>
+</html>

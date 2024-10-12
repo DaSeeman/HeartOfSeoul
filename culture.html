@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Culture</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <section class="summary">
+                <h2>About Our Culture</h2>
+                <p style="margin-top: 10px;">South Korea is a vibrant, modern nation known for its technological innovations, rich cultural heritage, and dynamic entertainment industry. 
+                    Located in East Asia, South Korea has grown into a global cultural powerhouse, captivating the world with its fascinating blend of ancient traditions and cutting-edge trends. 
+                    Whether its through K-pop, traditional cuisine, or historic landmarks, South Korea offers a unique and exciting experience for travelers and enthusiasts alike.</p>
+
+                <p style="margin-top: 20px;">South Korea has a unique and rich culture that blends ancient traditions with modern innovations. Rooted in Confucian principles, respect for family, elders, and societal harmony 
+                    are core values that shape daily life. Korean culture is also known for its vibrant art forms, including traditional music and dance, ceramics, and calligraphy. In recent years, 
+                    South Korea has gained global recognition for its pop culture, particularly through K-pop, K-dramas, and cinema, which have become international phenomena. Additionally, Korean cuisine, 
+                    with dishes like kimchi, bulgogi, and bibimbap, has also made a mark on the global culinary scene.</p>
+            </section>
+
+            <!-- Pink box for inserting an image -->
+            <section class="image-box">
+                <div class="image-placeholder">
+                    <img src="koreaculture.jpg" alt="Culture Image" style="max-width: 100%; height: auto;" />
+                </div>
+            </section>
+        </div>
+
+        <!-- Fun fact boxes -->
+        <section class="fun-facts">
+            <div class="fun-fact">
+                <strong>The Power of K-pop and K-dramas</strong>
+                <p>South Koreas pop culture, especially K-pop and K-dramas, has swept across the globe. 
+                    Global hits like BTS and "Squid Game" showcase the creativity of the country's 
+                    entertainment industry and have made South Korea a hub of global pop culture.</p>
+            </div>
+            <div class="fun-fact">
+                <strong>Traditional Korean Clothing (Hanbok)</strong>
+                <p>The hanbok is South Koreas traditional attire, known for its vibrant colors 
+                    and elegant design. Its still worn during special occasions and festivals, 
+                    representing the rich cultural heritage of the country.</p>
+            </div>
+            <div class="fun-fact">
+                <strong>Technologically Advanced Society</strong>
+                <p>South Korea is one of the most digitally connected countries in the world, 
+                    with superfast internet and widespread technological innovations. Cities like 
+                    Seoul feature cutting-edge architecture and tech hubs.</p>
+            </div>
+            <div class="fun-fact">
+                <strong>Respect for Elders and Hierarchical Culture</strong>
+                <p>South Korea places significant importance on respecting elders and hierarchy, 
+                    both in families and workplaces. This cultural value is deeply rooted in Confucianism, 
+                    influencing social interactions, language, and daily life.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Logo Click -->
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+</body>
+</html>

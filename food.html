@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Food</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<!-- Main Content Section -->
+<main>
+    <!-- Main Body and Summary -->
+    <div class="main-summary">
+        <h2>Korean Food</h2>
+        <p style="margin-top: 10px;">The best way to travel is through tasting the region's delicacies, and in Korea, 
+            food is more than just a meal—it's a gateway to its rich history and vibrant culture. 
+            Korean cuisine, with its bold flavors and diverse dishes, reflects centuries of tradition, 
+            shaped by geography, climate, and a deep connection to community and family.</p>
+        
+        <p style="margin-top: 20px;">From the communal sharing of kimchi, a staple in every household, 
+            to the sizzling barbecue enjoyed with friends, Korean food emphasizes balance, health, and
+            the importance of bringing people together. Through every bite, you'll experience the heart 
+            of Korea's heritage and the soul of its people.</p>
+        
+        <!-- Image Below Text -->
+        <img src="food.jpg" alt="Korean Food Image" class="korean-food-image">
+    </div>
+
+    <!-- Food Synopsis Sections -->
+    <div class="synopsis-container">
+        <!-- Recipe 1: Beef Bulgogi -->
+        <div class="recipe-section">
+            <div class="image-section">
+                <div class="image-placeholder">
+                    <img src="koreanbeef.jpg" alt="Beef Bulgogi Image">
+                </div>
+            </div>
+            <div class="food-synopsis">
+                <strong>Beef Bulgogi</strong>
+                <p>Bulgogi (불고기) means "fire meat" and is often made with beef. Its one of 
+                    the most well-known Korean traditional foods, evolving over time and varying by 
+                    region.</p>
+                <a href="koreanbeefrecipie.pdf" download class="download-button">Download Recipe PDF</a>
+                <a href="https://mykoreankitchen.com/bulgogi-korean-bbq-beef/" class="view-recipe-button">View Recipe</a>
+            </div>
+        </div>
+
+        <!-- Recipe 2: Yangpun Bibimbap -->
+        <div class="recipe-section">
+            <div class="image-section">
+                <div class="image-placeholder">
+                    <img src="bibimbap.png" alt="Yangpun Bibimbap Image">
+                </div>
+            </div>
+            <div class="food-synopsis">
+                <strong>Yangpun Bibimbap</strong>
+                <p>A versatile and flavorful dish, perfect for busy lifestyles, made in a large brass 
+                    or stainless steel bowl. Its an iconic communal meal in Korea.</p>
+                <a href="bibimbaprecipie.pdf" download class="download-button">Download Recipe PDF</a>
+                <a href="https://mykoreankitchen.com/yangpun-bibimbap/" class="view-recipe-button">View Recipe</a>
+            </div>
+        </div>
+
+        <!-- Recipe 3: Tteokbokki -->
+        <div class="recipe-section">
+            <div class="image-section">
+                <div class="image-placeholder">
+                    <img src="teokk.png" alt="Teokk Image">
+                </div>
+            </div>
+            <div class="food-synopsis">
+                <strong>Tteokbokki (Spicy Rice Cakes)</strong>
+                <p>Tteokbokki is a popular Korean street food made with rice cakes, fish cakes, 
+                    soup stock, and gochujang (Korean chili paste).</p>
+                <a href="tteokbokki.pdf" download class="download-button">Download Recipe PDF</a>
+                <a href="https://mykoreankitchen.com/tteokbokki-spicy-rice-cakes/" class="view-recipe-button">View Recipe</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Logo Click -->
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>
