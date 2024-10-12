@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Sub Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="goToHome()">
+                <img src="gradlogo.png" alt="Logo" class="logo-image">
+            </div>
+            <h1>Heart Of Seoul - Kpop</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li class="dropdown">
+                <a href="culture.html">Culture</a>
+                <ul class="dropdown-content">
+                    <li><a href="kpop.html">Kpop</a></li>
+                </ul>
+            </li>
+            <li><a href="alphabet.html">Alphabet</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="news.html">Newsletter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="content">
+            <section class="summary">
+                <h2>Korean Pop (KPOP)</h2>
+                <p style="margin-top: 10px;">K-pop, short for Korean pop music, has become a global phenomenon that not only defines South Korea’s 
+                    music scene but also plays a significant role in shaping its modern culture. Originating in the early 
+                    1990s, K-pop has grown into an industry that blends catchy melodies, intricate choreography, and highly 
+                    polished performances.</p> 
+                    
+                <p style="margin-top: 20px;">The genre is known for its fusion of various musical styles, such as hip-hop, 
+                    R&B, and electronic dance music, and is complemented by its visual aesthetics in music videos and stage performances. 
+                    K-pop groups like BTS, BLACKPINK, and EXO have gained international acclaim, expanding South Korea's cultural footprint across the globe. 
+                    This international success has boosted the nation’s soft power, positioning South Korea as a key player in global pop culture.</p>
+
+                <p style="margin-top: 20px;">The influence of K-pop on Korean culture extends beyond music. It has impacted fashion, language, 
+                    and even social attitudes, particularly among the younger generations. The iconic style of K-pop idols often sets trends, inspiring 
+                    fans in Korea and abroad to emulate their looks and lifestyles. Additionally, the “Hallyu” or Korean Wave, driven largely by K-pop, has 
+                    played a central role in promoting other aspects of Korean culture, such as food, dramas, and tourism.</p>
+                    
+                <p style="margin-top: 20px;">K-pop has also encouraged conversations around mental health, societal pressures, and issues like self-expression, 
+                    breaking some of the more traditional norms in Korean society. Thus, K-pop is not just entertainment; it's a cultural force that shapes identities 
+                    and bridges Korea with the world.</p>
+            </section>
+            
+            <section class="image-box">
+                <div class="image-placeholder" style="width: 100%; height: 400px; padding: 0; margin: 0;">
+                    <iframe src="https://giphy.com/embed/l0Erxoxc3H4C0qiIw" width="100%" height="100%" 
+                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div> <!-- CHATGPT Used in order to help refomrat the sizing of image-->
+            </section>
+        </div>
+
+        <!-- Fun Facts Section with External Links -->
+        <section class="fun-facts">
+            <div class="fun-fact">
+                <strong>ENHYPHEN</strong>
+                <p>ENHYPEN was formed on November 30, 2020, through the reality survival show I-LAND, under BELIFT LAB. 
+                    The group is known for their unique storytelling through songs like Drunk-Dazed and FEVER, blending powerful choreography with captivating narratives.</p>
+                <a href="https://enhypen.weverse.io/" target="_blank"><button>Click Here to know more about ENHYPHEN</button></a>
+            </div>
+            <div class="fun-fact">
+                <strong>PSY</strong> 
+                <p>PSY gained worldwide fame after releasing Gangnam Style in 2012, which became the first YouTube video to reach 1 billion views. 
+                    Known for his humorous and energetic performances, PSY continues to influence the K-pop scene with his catchy songs and viral appeal.</p>
+                <a href="https://psypark.com/" target="_blank"><button>Click here to know more about PSY</button></a>
+            </div>
+            <div class="fun-fact">
+                <strong>BLACKPINK</strong>
+                <p>BLACKPINK debuted on August 8, 2016, under YG Entertainment, quickly becoming one of the most influential girl groups in K-pop. 
+                    Known for their fierce performances and chart-topping hits like Kill This Love and How You Like That, they have established themselves as global fashion and music icons.</p>
+                <a href="https://www.blackpinkofficial.com/" target="_blank"><button>Click here to learn more about BLACKPINK</button></a>
+            </div>
+            <div class="fun-fact">
+                <strong>BTS</strong>
+                <p>BTS debuted on June 13, 2013, under Big Hit Entertainment, and rose to global prominence with their diverse music, often touching on themes of youth,
+                 mental health, and self-love. Their hits like Dynamite and Blood, Sweat & Tears have earned them numerous awards and an unprecedented international fanbase.</p>
+                <a href="https://ibighit.com/bts/eng/" target="_blank"><button>Click Here to Know More about BTS</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Logo Click -->
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+    
+    <footer>
+        <p>HeartOfSeoul 2024® All Rights Reserved</p>
+    </footer>
+</body>
+</html>
